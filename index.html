@@ -96,11 +96,9 @@
         </button>
       </div>
     </header>
-    <main id="content">
-      <div
-        class="bg-[#FAFAF9] grid items-center gap-8 grid-cols-2 medium:grid-cols-1 pt-16 pl-[120px] large:pl-20 medium:pl-10 small:pl-5"
-      >
-        <div>
+    <main id="content relative">
+      <div class="py-10 flex items-start gap-8 medium:flex-col justify-between relative pl-[120px] large:px-20 medium:px-10 small:px-5 after:top-0 after:left-0 after:content-[''] after:bg-[#EFEFEF] after:w-screen after:h-screen after:absolute after:z-[-1] medium:after:hidden">
+        <div id="heroText" class="medium:!relative sticky top-16 py-[150px] medium:py-8">
           <h1
             class="text-[65px] megalarge:text-[50px] megalarge:leading-[1] large:text-4xl medium:text-2xl leading-[78px] text-dark_text mb-2"
           >
@@ -121,16 +119,13 @@
             Kostenfreie Installation der Funkgeräte
           </p>
         </div>
-        <img
-          class="w-full large:hidden"
-          src="./asset/hero_review.png"
-          alt="hero_review"
-        />
-      </div>
-
-      <div class="py-10">
-        <div class="w-1/2 medium:w-full ml-auto mr-0 px-14 space-y-[30px]">
-          <h4 class="text-2xl text-dark_text font-bold">
+        <div class="w-1/2 medium:w-full ml-auto mr-0 space-y-[30px]">
+          <img
+            class="w-full object-cover max-h-screen h-[calc(100vh-40px)] medium:hidden"
+            src="./asset/hero_review.png"
+            alt="hero_review"
+          />
+          <h4 class="text-2xl pr-14 medium:mr-0 text-dark_text font-bold">
             Pflicht für neu installierte Geräte
           </h4>
           <p class="text-dark_text text-lg">

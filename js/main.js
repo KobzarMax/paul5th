@@ -318,22 +318,23 @@ function initFAQ() {
 
 initFAQ();
 
-const installFaq = document.querySelector("#installFaq");
+// const installFaq = document.querySelector("#installFaq");
+//
+// const installFaqItems = installFaq.querySelectorAll("li");
+//
+// installFaqItems.forEach((item, index) => {
+//   const itemText = item.querySelector("p");
+//   slideUp(itemText);
+//   item.addEventListener("click", (e) => {
+//     installFaqItems.forEach((faqItem, faqIndex) => {
+//       if (faqIndex !== index) {
+//         const faqItemText = faqItem.querySelector("p");
+//         faqItem.classList.remove("active");
+//         slideUp(faqItemText);
+//       }
+//     });
+//     item.classList.add("active");
+//     slideDown(itemText);
+//   });
+// });
 
-const installFaqItems = installFaq.querySelectorAll("li");
-
-installFaqItems.forEach((item, index) => {
-  const itemText = item.querySelector("p");
-  slideUp(itemText);
-  item.addEventListener("click", (e) => {
-    installFaqItems.forEach((faqItem, faqIndex) => {
-      if (faqIndex !== index) {
-        const faqItemText = faqItem.querySelector("p");
-        faqItem.classList.remove("active");
-        slideUp(faqItemText);
-      }
-    });
-    item.classList.add("active");
-    slideDown(itemText);
-  });
-});
